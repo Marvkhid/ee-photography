@@ -11,7 +11,6 @@ const NotFound = () => (
       <ButtonLink href="/" withArrow>
         Back home
       </ButtonLink>
-      <ButtonLink href="/portfolio">View portfolio</ButtonLink>
     </div>
   </section>
 )

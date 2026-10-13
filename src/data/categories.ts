@@ -1,9 +1,8 @@
 /**
- * Photography categories. One list drives the Portfolio filters, category routes,
- * Services page, home page covers and the enquiry form.
+ * Photography categories. One list drives the gallery filters, Services page, home page covers and the enquiry form.
  *
  * To add a category: add its slug to CATEGORY_SLUGS, add an entry to `categoryMap`,
- * drop photos in public/images/portfolio/<slug>/ and register them in data/photos.ts.
+ * drop photos in public/images/gallery/<slug>/ and register them in data/photos.ts.
  * To make it bookable, also add the slug to SERVICE_SLUGS.
  */
 export const CATEGORY_SLUGS = [
@@ -113,7 +112,7 @@ export const categories: readonly Category[] = CATEGORY_SLUGS.map((slug) => cate
 
 export const services: readonly Category[] = SERVICE_SLUGS.map((slug) => categoryMap[slug])
 
-/** Categories shown in the portfolio but not yet confirmed as bookable services. */
+/** Categories shown in the gallery but not yet confirmed as bookable services. */
 export const comingCategories: readonly Category[] = CATEGORY_SLUGS.filter(
   (slug) => !isServiceSlug(slug),
 ).map((slug) => categoryMap[slug])

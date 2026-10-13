@@ -154,9 +154,6 @@ export const Hero: FC = () => {
           {brand.tagline}
         </p>
         <div className="flex flex-wrap justify-center gap-3" data-hero-item="text">
-          <ButtonLink href="/portfolio" size="sm">
-            Portfolio
-          </ButtonLink>
           <ButtonLink href="/contact" size="sm">
             Book now
           </ButtonLink>

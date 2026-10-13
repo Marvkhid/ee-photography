@@ -22,14 +22,12 @@ export type Project = {
   href: string
 }
 
-export const projects: readonly Project[] = [
-  {
-    id: 'project-01',
+export const projects: readonly Project[] = [  { id: 'project-01',
     title: 'Project 01',
     category: 'Portrait photography',
     cover: '/images/projects/project-01.jpg',
     alt: 'Three generations of a family smiling together in black and white',
-    href: '/portfolio/portraits',
+    href: '/contact',
   },
   {
     id: 'project-02',
@@ -37,7 +35,7 @@ export const projects: readonly Project[] = [
     category: 'Wedding photography',
     cover: '/images/projects/project-02.jpg',
     alt: 'Wedding couple standing forehead to forehead',
-    href: '/portfolio/weddings',
+    href: '/contact',
   },
   {
     id: 'project-03',
@@ -45,7 +43,7 @@ export const projects: readonly Project[] = [
     category: 'Birthday portrait',
     cover: '/images/projects/project-03.jpg',
     alt: 'Birthday portrait of a smiling girl on patterned fabric',
-    href: '/portfolio/birthdays',
+    href: '/contact',
   },
 ]
 

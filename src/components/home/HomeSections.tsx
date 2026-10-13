@@ -37,9 +37,6 @@ export const MomentsSection: FC = () => (
         Every shot tells a story. From intimate portraits to weddings and birthday celebrations, I capture the
         moments that matter most.
       </Lead>
-      <ButtonLink href="/portfolio" withArrow>
-        View portfolio
-      </ButtonLink>
     </div>
     <MomentsCarousel slides={featuredSlides} startIndex={FEATURED_START_INDEX} />
   </Section>
@@ -131,37 +128,7 @@ export const ServicesPreview: FC = () => (
   </Section>
 )
 
-export const CategoryCovers: FC<{ title?: string }> = ({ title = 'Find the photography you came for' }) => (
-  <Section labelledBy="covers-title">
-    <div className="mb-10 flex flex-wrap items-end justify-between gap-5" data-reveal>
-      <div>
-        <Eyebrow>Explore the portfolio</Eyebrow>
-        <Heading id="covers-title" size="lg">
-          {title}
-        </Heading>
-      </div>
-      <ButtonLink href="/portfolio" withArrow>
-        Full portfolio
-      </ButtonLink>
-    </div>
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-reveal>
-      {categories
-        .filter((category) => categoriesWithPhotos.includes(category.slug))
-        .map((category) => (
-          <PhotoCard
-            key={category.slug}
-            alt={`${category.name} photography`}
-            aspect="aspect-4/3"
-            focal={category.heroFocal}
-            href={`/portfolio/${category.slug}`}
-            image={category.cover}
-            sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
-            title={category.name}
-          />
-        ))}
-    </div>
-  </Section>
-)
+export const CategoryCovers: FC = () => null
 
 export const ExperienceSection: FC = () => (
   <Section labelledBy="experience-title">

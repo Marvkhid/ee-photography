@@ -13,7 +13,7 @@ needs a **Google Business Profile**, which only the owner can create.
 4. **Category:** primary `Photographer`; add `Wedding photographer`, `Portrait studio` or similar only if they apply.
 5. **Contact details:** phone `+234 901 744 4836`, website = the live site, and the same email.
 6. **Verify** with whichever method Google offers (postcard, phone, email or video).
-7. **Add real photographs** (the best portfolio pictures), a short description and the services list.
+7. **Add real photographs** (the best gallery pictures), a short description and the services list.
 8. **Reviews:** after the first real clients, share the profile's review link with them. Genuine Google reviews can later
    replace the placeholder testimonials on the site.
 

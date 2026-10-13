@@ -4,7 +4,7 @@ Every image the website expects, where it lives and how large it should be. All 
 
 **How quality works:** the site serves each photo through Next.js image optimisation (AVIF/WebP, responsive sizes, quality 90). It can only be as sharp as the file you supply, so export **originals, not WhatsApp or screenshot copies**, and keep the long edge at 2400 px or more. Never upscale a small file.
 
-**Current files are stand-ins.** They were extracted from the supplied portfolio PDF (about 1000–2500 px) so the site looks complete from day one. Replace each with the full-resolution original using the same filename. The Graduations, Headshots and Events categories currently use stand-in portraits, so replace them with genuine photographs of those occasions (or remove the category) before launch.
+**Current files are stand-ins.** They were extracted from the supplied sample PDF (about 1000–2500 px) so the site looks complete from day one. Replace each with the full-resolution original using the same filename. The Graduations, Headshots and Events categories currently use stand-in portraits, so replace them with genuine photographs of those occasions (or remove the category) before launch.
 
 **Adding a photograph:** put the file in the right folder, then add one line in `src/data/photos.ts`. To remove one, delete the line. A missing file never breaks a page: a dark placeholder is shown instead.
 
@@ -59,34 +59,34 @@ Every image the website expects, where it lives and how large it should be. All 
 | `images/video-posters/weddings.jpg` | Poster still for the "weddings" video loop | Match the video framing, 1920×1080 (or 1080×1350) | 1037×1556 |
 | `images/video-posters/process.jpg` | Poster still for the "process" video loop | Match the video framing, 1920×1080 (or 1080×1350) | 1095×1642 |
 | `images/video-posters/contact.jpg` | Poster still for the "contact" video loop | Match the video framing, 1920×1080 (or 1080×1350) | 1201×1800 |
-| `images/portfolio/weddings/wedding-01.jpg` | Weddings gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/weddings/wedding-02.jpg` | Weddings gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/weddings/wedding-03.jpg` | Weddings gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1800×1200 |
-| `images/portfolio/weddings/wedding-04.jpg` | Weddings gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1321×1800 |
-| `images/portfolio/weddings/wedding-05.jpg` | Weddings gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1191×1800 |
-| `images/portfolio/portraits/portrait-01.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1200×1800 |
-| `images/portfolio/portraits/portrait-02.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1200×1800 |
-| `images/portfolio/portraits/portrait-03.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1201×1800 |
-| `images/portfolio/portraits/portrait-04.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1200×1800 |
-| `images/portfolio/portraits/portrait-05.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1090×1602 |
-| `images/portfolio/portraits/portrait-06.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/portraits/portrait-07.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1095×1592 |
-| `images/portfolio/portraits/portrait-08.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/portraits/portrait-09.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/birthdays/birthday-01.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1800×1200 |
-| `images/portfolio/birthdays/birthday-02.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/birthdays/birthday-03.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/birthdays/birthday-04.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1095×1642 |
-| `images/portfolio/birthdays/birthday-05.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1012×1480 |
-| `images/portfolio/birthdays/birthday-06.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1095×1642 |
-| `images/portfolio/graduations/graduation-01.jpg` | Graduations gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 917×1354 |
-| `images/portfolio/graduations/graduation-02.jpg` | Graduations gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/headshots/headshot-01.jpg` | Headshots gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/headshots/headshot-02.jpg` | Headshots gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/headshots/headshot-03.jpg` | Headshots gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/events/event-01.jpg` | Events gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1095×1642 |
-| `images/portfolio/events/event-02.jpg` | Events gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
-| `images/portfolio/events/event-03.jpg` | Events gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/weddings/wedding-01.jpg` | Weddings gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/weddings/wedding-02.jpg` | Weddings gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/weddings/wedding-03.jpg` | Weddings gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1800×1200 |
+| `images/gallery/weddings/wedding-04.jpg` | Weddings gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1321×1800 |
+| `images/gallery/weddings/wedding-05.jpg` | Weddings gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1191×1800 |
+| `images/gallery/portraits/portrait-01.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1200×1800 |
+| `images/gallery/portraits/portrait-02.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1200×1800 |
+| `images/gallery/portraits/portrait-03.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1201×1800 |
+| `images/gallery/portraits/portrait-04.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1200×1800 |
+| `images/gallery/portraits/portrait-05.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1090×1602 |
+| `images/gallery/portraits/portrait-06.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/portraits/portrait-07.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1095×1592 |
+| `images/gallery/portraits/portrait-08.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/portraits/portrait-09.jpg` | Portraits gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/birthdays/birthday-01.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1800×1200 |
+| `images/gallery/birthdays/birthday-02.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/birthdays/birthday-03.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/birthdays/birthday-04.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1095×1642 |
+| `images/gallery/birthdays/birthday-05.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1012×1480 |
+| `images/gallery/birthdays/birthday-06.jpg` | Birthdays gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1095×1642 |
+| `images/gallery/graduations/graduation-01.jpg` | Graduations gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 917×1354 |
+| `images/gallery/graduations/graduation-02.jpg` | Graduations gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/headshots/headshot-01.jpg` | Headshots gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/headshots/headshot-02.jpg` | Headshots gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/headshots/headshot-03.jpg` | Headshots gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/events/event-01.jpg` | Events gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1095×1642 |
+| `images/gallery/events/event-02.jpg` | Events gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
+| `images/gallery/events/event-03.jpg` | Events gallery photograph | Long edge at least 2400 px, sRGB JPEG quality 85–90; any aspect ratio | 1037×1556 |
 
 ## Video loops
 
@@ -94,5 +94,5 @@ See `public/videos/README.md` for the five loop slots (`interlude`, `story`, `we
 
 ## Optional extras
 
-- `images/portfolio/food/` exists for a future Food category (add it in `src/data/categories.ts` and `src/data/photos.ts` first).
+- `images/gallery/food/` exists for a future Food category (add it in `src/data/categories.ts` and `src/data/photos.ts` first).
 - Camera/lens photography for a textured contact background is not used yet; if you supply some, add it to `images/contact/` and use it in `src/app/contact/page.tsx`.

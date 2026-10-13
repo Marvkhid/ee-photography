@@ -41,7 +41,6 @@ export const brand = {
   },
   navigation: [
     { label: 'Home', href: '/' },
-    { label: 'Portfolio', href: '/portfolio' },
     { label: 'Services', href: '/services' },
     { label: 'About', href: '/about' },
     { label: 'Testimonials', href: '/testimonials' },

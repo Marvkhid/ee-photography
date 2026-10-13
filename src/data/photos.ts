@@ -1,8 +1,7 @@
 import { CATEGORY_SLUGS, type CategorySlug } from '@/data/categories'
 
 /**
- * Portfolio photographs.
- * Place the file in public/images/portfolio/<category>/ and add a line here.
+ * Gallery photographs.
  * `shape` is the crop shown in galleries; the full image always opens in the lightbox.
  */
 export type PhotoShape = 'tall' | 'classic' | 'portrait' | 'landscape'
@@ -30,7 +29,7 @@ const buildPhotos = (
     const number = pad(index + 1)
     const base = {
       id: `${filePrefix}-${number}`,
-      src: `/images/portfolio/${category}/${filePrefix}-${number}.jpg`,
+      src: `/images/gallery/${category}/${filePrefix}-${number}.jpg`,
       alt: seed.alt,
       category,
       shape: seed.shape,

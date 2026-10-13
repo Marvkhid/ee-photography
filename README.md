@@ -19,8 +19,8 @@ Copy `.env.example` to `.env.local` and fill it in (see "Enquiry form" below).
 | Route | Page |
 | --- | --- |
 | `/` | Home: 13 sections from hero to final booking invitation |
-| `/portfolio` | Portfolio: category chips, masonry gallery, lightbox, browse-by-category |
-| `/portfolio/[category]` | One page per category (portraits, weddings, birthdays, graduations, headshots, events) |
+| `/gallery` | Gallery: category chips, masonry grid, lightbox, browse-by-category |
+| `/gallery/[category]` | One page per category (portraits, weddings, birthdays, graduations, headshots, events) |
 | `/services` | Services with enquiry links that pre-select the service |
 | `/about` · `/testimonials` · `/contact` | As named |
 | `/api/enquiry` | Enquiry form endpoint (server side) |
@@ -39,7 +39,7 @@ Copy `.env.example` to `.env.local` and fill it in (see "Enquiry form" below).
 | I want to… | Edit |
 | --- | --- |
 | Change phone, email, Instagram, WhatsApp, tagline, nav labels | `src/config/brand.ts` |
-| Add or remove a portfolio photo | Put the file in `public/images/portfolio/<category>/`, then edit `src/data/photos.ts` |
+| Add or remove a gallery photo | Put the file in `public/images/gallery/<category>/`, then edit `src/data/photos.ts` |
 | Add a category | `src/data/categories.ts` (slug list + entry) and `src/data/photos.ts`; add to `SERVICE_SLUGS` to make it bookable |
 | Home carousel / projects / FAQ / process steps | `src/data/home.ts` |
 | Replace placeholder testimonials | `src/data/testimonials.ts` (see below) |
@@ -72,7 +72,7 @@ For testing, `onboarding@resend.dev` works but only delivers to the address the 
 
 ## Architecture notes
 
-- Pages and sections are Server Components. Only interactive parts are client components: header/menu, intro, hero, carousel, portfolio filter and lightbox, enquiry form, video loop, tilt.
+- Pages and sections are Server Components. Only interactive parts are client components: header/menu, intro, hero, carousel, gallery filter and lightbox, enquiry form, video loop, tilt.
 - Scroll motion is centralised in `PageMotion`: server components just add `data-reveal`, `data-clip`, `data-parallax`, `data-char` or `data-progress` attributes. Everything animates transform and opacity.
 - `SafeImage` wraps `next/image`. A missing file shows a dark placeholder in the same box, never a broken icon.
 - All data (categories, photos, testimonials, FAQ, videos) is typed and lives in `src/data/`. Pages never hard-code galleries.
@@ -85,7 +85,7 @@ See `LAUNCH-CHECKLIST.md` (all ten launch items, what is built and what only you
 
 ## Known limits
 
-- Photo files supplied so far are stand-ins from the portfolio PDF and are lower resolution than ideal. See `ASSET-GUIDE.md`.
+- Photo files supplied so far are stand-ins from the supplied sample PDF and are lower resolution than ideal. See `ASSET-GUIDE.md`.
 - Graduations, Headshots and Events galleries use stand-in portraits until real photographs are supplied.
 - Video loops fall back to the poster with a slow zoom until real clips are added.
 - The animations and layout were built and type-checked, and every route was tested over HTTP, but they still need a visual pass in real browsers (desktop and phone).

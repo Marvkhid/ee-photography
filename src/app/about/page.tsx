@@ -41,8 +41,8 @@ const AboutPage = () => (
           moments that evoke emotions and tell stories.
         </p>
         <p className="mb-8 text-label uppercase tracking-eyebrow">{services.map((service) => service.name).join(' · ')}</p>
-        <ButtonLink href="/portfolio" withArrow>
-          Explore portfolio
+        <ButtonLink href="/contact" withArrow>
+          Book a session
         </ButtonLink>
       </div>
     </Section>

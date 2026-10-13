@@ -66,7 +66,6 @@ const ServicesPage = () => (
               <ButtonLink href={`/contact?service=${service.slug}`} withArrow>
                 Make an enquiry
               </ButtonLink>
-              <ButtonLink href={`/portfolio/${service.slug}`}>See the work</ButtonLink>
             </div>
           </div>
         </Section>
@@ -84,7 +83,7 @@ const ServicesPage = () => (
           .filter((category) => categoriesWithPhotos.includes(category.slug))
           .map((category) => (
             <li key={category.slug}>
-              <Link className="group block" href={`/portfolio/${category.slug}`}>
+              <Link className="group block" href={`/contact`}>
                 <span className="relative block h-44 w-32 overflow-hidden border border-border">
                   <SafeImage
                     alt={`${category.name} photography`}

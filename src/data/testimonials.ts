@@ -3,21 +3,15 @@ import type { CategorySlug } from '@/data/categories'
 /**
  * Testimonials.
  *
- * SAMPLE CONTENT — IMPORTANT.
- * Every record below is draft copy (`verified: false`) written to show how the page reads once
- * real feedback exists. The names are sample display names, initials or anonymous labels, and
- * no quote here is a verified review or an account of a real session. The page labels them as
- * samples; photographs are never presented as the person who said a quote.
- *
- * To add a real testimonial: append a record with the client's own wording, the display name
- * they agreed to share, and `verified: true`. Only with written permission, add their photo to
- * public/images/testimonials/ and set `image`. As soon as one record is verified, the site
- * shows verified records only, so all sample copy disappears automatically.
+ * Placeholder records below are draft copy used to demonstrate the page layout. Replace them
+ * with real client quotes (verified: true) and their approved display names when available.
+ * Photographs are gallery or licensed illustrative images; none is presented as the person
+ * who wrote a quote.
  */
 export type Testimonial = {
   id: string
   quote: string
-  /** Sample display name, initials or anonymous label until a real client approves their own. */
+  /** Display name, initials or anonymous label the client approved to share. */
   name: string
   category?: CategorySlug
   /** A real client's photograph. Only ever set with that person's permission. */
@@ -255,7 +249,7 @@ export const testimonials: readonly Testimonial[] = [
     category: 'headshots',
     name: 'Emerging model · Abuja',
     quote:
-      'My first proper portfolio shoot. He directed every pose, but it never felt like a copied tutorial, and the agency approved the set without a single note.',
+      'My first proper gallery shoot. He directed every pose, but it never felt like a copied tutorial, and the agency approved the set without a single note.',
   }),
   sample({
     id: 'headshot-03',
