@@ -24,8 +24,8 @@ export const brand = {
     height: 498,
   },
   phone: {
-    display: '+234 901 744 8846',
-    href: 'tel:+2349017448846',
+    display: '+234 901 744 4836',
+    href: 'tel:+2349017444836',
   },
   email: {
     address: 'photographyee9@gmail.com',
@@ -37,7 +37,7 @@ export const brand = {
   },
   whatsapp: {
     /** International format without "+" or spaces. */
-    number: '2349017448846',
+    number: '2349017444836',
   },
   navigation: [
     { label: 'Home', href: '/' },
